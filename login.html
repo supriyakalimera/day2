@@ -1,0 +1,47 @@
+<html>
+    <head> 
+       <title>Home</title>
+    </head>
+    <body>
+        <a href="home.html">Home</a>
+         
+         <center>
+            
+            <h1>Welcome to Login Page</h1>    
+            <script>
+                function verifyId(){
+                    let id=document.getElementById("id").value;
+                    let pass=document.getElementById("pass").value;
+                    if(id=="hr" && pass=="hr"){
+                        location.replace("http://127.0.0.1:5500/Employees.html ")
+                     } else{
+                            location.replace("http://127.0.0.1:5500/product.html")
+                        }
+                    }
+
+                    
+                
+            </script>
+
+        <table>
+            <tbody>
+                <tr>
+                    <td>Enter LoginId</td>
+                    <td><input type="text" placeholder="Enter LoginId" id="id"/></td>
+                </tr>
+                <tr>
+                    <td>Enter Password</td>
+                    <td><input type="password" placeholder="Enter Password" id="pass"/></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <button onclick="verifyId()">Login</button> New User? <a href="Register.html">SingUp</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+           <h3 id="h5" style="color: red;"></h3>
+         </center>
+        
+    </body>
+</html>
